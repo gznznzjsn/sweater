@@ -1,0 +1,51 @@
+body {
+    background: radial-gradient(circle, rgba(63, 251, 176, 1) 9%, rgba(63, 251, 141, 1) 16%, rgba(72, 235, 244, 1) 35%, rgba(252, 70, 107, 1) 92%);
+}
+
+input {
+    background-color: rgb(39, 180, 114)
+}
+
+.container {
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.login {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.login-new {
+    text-align: center;
+}
+
+.input {
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-authors {
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}

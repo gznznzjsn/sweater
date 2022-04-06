@@ -15,17 +15,18 @@ import java.util.Map;
 public class RegistrationController {
     @Autowired
     private UserRepos userRepos;
+
     @GetMapping("/registration")
     public String registration() {
         return "registration";
     }
 
     @PostMapping("/registration")
-    public String addUser(User user, Map<String,Object>model) {
+    public String addUser(User user, Map<String, Object> model) {
         User userFromDb = userRepos.findByUsername(user.getUsername());
 
-        if(userFromDb!=null){
-            model.put("message","User exists!");
+        if (userFromDb != null) {
+            model.put("message", "User exists!");
             return "registration";
         }
 

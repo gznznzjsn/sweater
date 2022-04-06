@@ -2,12 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Spring Security Example</title>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
 </head>
 <body>
 Add new user
-{{#message}}
-    {{message}}
-{{/message}}
+<span style="color:red">
+    {{#message}}
+        {{message}}
+    {{/message}}
+</span>
 <form action="/registration" method="post">
     <div><label>User Name : <input type="text" name="username"></label></div>
     <div><label>Password : <input type="password" name="password"></label></div>
